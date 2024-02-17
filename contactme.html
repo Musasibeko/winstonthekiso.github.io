@@ -85,7 +85,55 @@
   </div>
   </div>
   </section>
+
+
+  <div class="contactcontainer">
+  <form onsubmit="sendEmail(); reset(); " >
   
+  <h3>GET IN TOUCH</h3>
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="text" id="phone" placeholder="phone number" required>
+  <input type="email" id="email" placeholder="Email " required>
+  <textarea id="message"  rows="4" placeholder="How Can We Help You?"></textarea>
+  <button type="submit">Submit</button>
+  </form>
+  </div>
+  
+  
+  
+  <script src=" https://smtpjs.com/v3/smtp.js"</script>
+  <script>
+  function sendEmail() {
+  
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "musasibeko61@gmail.com",
+    Password : "FvckTheSystem47",
+    To : 'musasibeko61@gmail.com',
+    From : document.getElementById("Email").value,
+    Subject : "New Contact form enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message successful)
+);
+  
+  }
+  
+  
+  
+  
+  
+  
+  </script>
+  
+
+
+
+
+
+
+
+	  
   <footer class="p-5 bg-light text-dark 
   text-center position-relative">
   <div class="container">

@@ -1,97 +1,132 @@
- <link rel="stylesheet" href="style.css">
-    <title>Winston Thekiso</title>
-    <style>
-        @media (max-width: 575.98px) {
-            .navbar-nav {
-                text-align: left;
-            }
-        }
-        .card-text {
-            margin: 25%;
-        }
-        .card {
-            margin: auto;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <title>Winston Thekiso</title>
+  <style>
+    .card-img-top {
+      height: auto;
+      width: 100%;
+    }
+    .card-body {
+      text-align: center;
+      margin: 3px;
+	  margin-left: 40px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card-title {
+      margin-top: 20px;
+	  margin-left: 50px;
+    }
+    @media (min-width: 768px) {
+      .card {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      .row .col-md-6 img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .card-body {
+        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .card-img-container {
+        max-width: 300px;
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .navbar-toggler {
+      order: -1;
+    }
+  </style>
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
     <div class="container">
-        <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="gallery.html" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a href="AtWork.html" class="nav-link">At Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contactme.html" class="nav-link">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="Atwork.html" class="nav-link">At Work</a></li>
+          <li class="nav-item"><a href="contactme.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
 
-<section>
-    <div class="card mb-3 py-5 px-2" style="max-width: 1300px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="https://www.artprintsa.com/images/wtport.jpg" class="img-fluid rounded-start" alt="#">
-            </div>
-            <div class="col-md-8">
+  <h1 class="p-3 text-center">ABOUT ME</h1>
+
+  <!-- About Section -->
+  <section class="min-vh-100">
+    <div class="container-lg">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="https://www.artprintsa.com/images/wtport.jpg" class="card-img-top" alt="Winston Thekiso">
+              </div>
+              <div class="col-md-6">
                 <div class="card-body">
-                    <center><h5 class="card-title">ABOUT ME</h5></center>
-                    <p class="card-text">
-                        Winston Mojalefa Thekiso is an artist based in Mbombela, Mpumalanga. He was born and raised in Evaton, Gauteng and graduated with a diploma in Graphic Design at the Technikon Witwatersrand in 2000.
-                    </p>
-                    <p class="card-text">
-                        Thekiso's preferred drawing medium is ballpoint pen which he uses to slowly build up the images that he makes. His work quietly and calmly tracks the social, political and economic concerns of living in South Africa.
-                    </p>
-                    <p class="card-text">
-                        He draws inspiration from observing events that occur around him and is particularly interested in the way a human mind works, thought processes, philosophy, spirituality as well as his personal life encounters. He likes to explore the thinking behind the behaviour of people which are influenced by the societies they live in, their belief systems, culture and moral fiber.
-                    </p>
-                    <p class="card-text">
-                        Conceptually, his work comments on stereotypes and offers a channel for a fresh outlook on social issues. He uses geometric shapes and flowers to create detailed work, mostly a combination of portraiture and landscape, and this has become his signature mark.
-                    </p>
-                    <p class="card-text">
-                        Winston is interested in creating works that do not offer an immediate identification with the known but challenge the viewer to explore and come up with their own understanding of what each piece is about.
-                    </p>
+                  <h5 style="margin-top: 20%"  class="card-title">Winston Mojalefa Thekiso</h5>
+                  <p>Winston Mojalefa Thekiso is a ballpoint pen artist from Mbombela, Mpumalanga, with a diploma in Graphic Design from Technikon Witwatersrand.
+					His work, inspired by social, political, and economic issues in South Africa, delves into human thought, behavior, and philosophy.
+					Known for combining portraiture and landscapes using geometric shapes and flowers, Thekiso's art challenges viewers to derive their own interpretations and offers fresh perspectives on societal stereotypes.</p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section>
-    <footer class="p-5 bg-light text-dark text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2024 
-                <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-            </p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-3">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-        </div>
-    </footer>
-</section>
+  <!-- Footer -->
+  <footer class="p-2 bg-light text-dark text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2024
+        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-primary mx-1"></i></a>
+        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-primary mx-1"></i></a>
+        <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 </body>
 </html>

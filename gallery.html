@@ -1,318 +1,225 @@
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="index.html">
-		<title>Winston Thekiso</title>
-  </head>
-  <body>
-  
-	<nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
-	<div class="container">
-    
-  
-  
-	<a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
-  
-	<button 
-		class="navbar-toggler"
-		type="button" 
-		data-bs-toggle="collapse" 
-		data-bs-target="#navmenu" >
-	<span class="navbar-toggler-icon"></span>
-    </button>
-  
-	<div class="collapse navbar-collapse" id="navmenu">
-	<ul class="navbar-nav ms-auto">
-	<li class="nav-item">
-		<a href="index.html" class="nav-link">Home</a>
-	</li>	
-	<li class="nav-item">
-		<a href="gallery.html" class="nav-link">Gallery</a>
-	</li>
-	<li class="nav-item">
-		<a href="events.html" class="nav-link">Events</a>
-	</li>
-	<li class="nav-item">
-		<a href="Atwork.html" class="nav-link">At Work</a>
-	</li>
-	<li class="nav-item">
-		<a href="contactme.html" class="nav-link">Contact Me</a>
-	</li>	
-	</ul>
-	</div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <title>Winston Thekiso</title>
+  <style>
+    .card-img-top {
+      height: auto;
+      width: 100%;
+    }
+    .card-body {
+      text-align: center;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card-title {
+      margin-top: 20px; /* Add margin to move the headings down */
+    }
+    @media (min-width: 768px) {
+      .card {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+      .row .col-md-6 img {
+        width: 100%;
+        max-width: 300px; /* 30% of the original width */
+      }
+    }
+    @media (min-width: 1200px) {
+      .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .card-body {
+        text-align: center; /* Center-align text for large screens */
+        flex: 1;
+      }
+      .card-img-container {
+        max-width: 300px;
+        flex: 1;
+      }
+    }
+    .navbar-toggler {
+      order: -1; /* Move navbar-toggler to the left on small screens */
+    }
+  </style>
+</head>
+<body>
 
-  </div> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="Atwork.html" class="nav-link">At Work</a></li>
+          <li class="nav-item"><a href="contactme.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </div>
+    </div> 
   </nav>
-  
-  
- <h1 class="p-3"> <center>DRAWINGS</center> 
 
+  <h1 class="p-3 text-center">DRAWINGS</h1>
 
+  <!-- Gallery Section -->
   <section class="gallery min-vh-100">
-<div class="container-lg" >
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+    <div class="container-lg">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image1.jpg" class="card-img-top" alt="Listen (2023)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">LISTEN (2023)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 304 X 304mm</p>
+                  <p><b>Price</b>: R4 185</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image2.jpg" class="card-img-top" alt="Changing Gears (2022)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">CHANGING GEARS (2022)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 710 X 710mm</p>
+                  <p><b>Price</b>: R15 255</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image3.jpg" class="card-img-top" alt="Listen (2023)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">LISTEN (2023)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 304 X 304mm</p>
+                  <p><b>Price</b>: R4 185</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image4.jpg" class="card-img-top" alt="Changing Gears (2022)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">CHANGING GEARS (2022)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 710 X 710mm</p>
+                  <p><b>Price</b>: R15 255</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image5.jpg" class="card-img-top" alt="Listen (2023)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">LISTEN (2023)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 304 X 304mm</p>
+                  <p><b>Price</b>: R4 185</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/image6.jpg" class="card-img-top" alt="Changing Gears (2022)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">CHANGING GEARS (2022)</h5>
+                  <p><b>Medium</b>: color pens on plywood with a transparent glass backing</p>
+                  <p><b>Size</b>: 710 X 710mm</p>
+                  <p><b>Price</b>: R15 255</p>
+                  <a href="contactme.html" ></a>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
-
-<div class="col">
-<div class="card " style="width:100%;"  >
-  <img class="" src="pictures/new1.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">LISTEN(2023)</h5>
-    <h6> <p class=""><b>Medium</b>: color pens on plywood with a transparent glass backing </p><h6>
-   <h6> <p class=""><b>Size</b>: 304 X 304mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R4 185 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-	    
-<div class="col">
-<div class="card" style="width:100%;"  >
-  <img src="pictures/new2.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">CHANGING GEARS (2022)</h5>
-   <h6> <p class=""><b>Medium</b>: color pens on plywood with a transparent glass backing </p><h6>
-   <h6> <p class=""><b>Size</b>: 710 X 710mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R15 255 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="col">
-<div class="card px-1 " style="width:100%;"  >
-  <img src="pictures/new5.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">'Maletsopa'(The One Who Came From Mud)(2020)</h5>
-    <h6> <p class=""><b>Medium</b>: color pens on paper </p><h6>
-   <h6> <p class=""><b>Size</b>: 304 X 304mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R10 395 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-
-<div class="col">
-<div class="card " style="width:100%;"  >
-  <img class="" src="pictures/new7.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">ROSA (2021)</h5>
-    <h6> <p class=""><b>Medium</b>: colored pens, blow torch and soldering iron on cork sheets </p><h6>
-   <h6> <p class=""><b>Size</b>: 304 X 304mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R9 045 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-	    
-<div class="col">
-<div class="card" style="width:100%;"  >
-  <img src="pictures/new4.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">'Madifate'(Tree Lady) (2021)</h5>
-   <h6> <p class=""><b>Medium</b>: color pens, blow torch and soldering iron on cork sheets</p><h6>
-   <h6> <p class=""><b>Size</b>: 930 X 1230mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R16 875 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="col">
-<div class="card px-1 " style="width:100%;"  >
-  <img src="pictures/new3.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">'Tinguva Ta Mune'(FOUR SEASONS)(2022)</h5>
-    <h6> <p class=""><b>Medium</b>: color pens on plywood </p><h6>
-   <h6> <p class=""><b>Size</b>: 630 X 625mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R13 365 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-<div class="col">
-<div class="card " style="width:100%;"  >
-  <img class="" src="pictures/image1.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">LEAF(2023)</h5>
-    <h6> <p class=""><b>Medium</b>: color pens on plywood </p><h6>
-   <h6> <p class=""><b>Size</b>: 710 X 650mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R.... </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-	    
-<div class="col">
-<div class="card " style="width:100%;">
-  <img src="pictures/new6.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">Nnete (Truth) (2022)</h5>
-   <h6> <p class=""><b>Medium</b>: color pens on plywood </p><h6>
-   <h6> <p class=""><b>Size</b>: 630 X 555mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R14 715 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="col">
-<div class="card  " style="width:100%;" >
-  <img src="pictures/new8.jpg" class="card-img-top" >
-  <div class="card-body">
-    <h5 class="card-title">'Powerlines'(2023)</h5>
-    <h6> <p class=""><b>Medium</b>: color pens on paper </p><h6>
-   <h6> <p class=""><b>Size</b>: 730 X 520mm </p><h6>
-    <h6> <p class=""><b>Price</b>: R12 771 </p><h6>
-    <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-
-</section>
-
-
-<!-- Modal -->
-<div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="file:///C:/Users/MUSA/Desktop/Winston%20thekiso/pictures/image3.jpg" class="modal-img" alt="modal image">
-      </div>
 	  
-     
+  <!-- Footer -->
+  <footer class="p-2 bg-light text-dark text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2024
+        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-primary mx-1"></i></a>
+        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-primary mx-1"></i></a>
+        <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-3">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
     </div>
-  </div>
-</div>
-
-<section class="bg-dark text-light p-3">
-<div class="container">
-<div class="d-md-flex justify-content-between
-align-items-center">
-<h3 class="mb-3 mb-md-0">
-Sign Up For Our Newsletter</h3>
-
-
-<div class="input-group news-input">
-<input type="text" class="form-control" 
-placeholder="Enter Email Address"/>
-
-<button
-class="btn btn-light btn-lg" 
-type="button" >Submit </button>
-
-
-</div>
-</div>
-</div>
-</section>
-
-
-  
-  
-   
-  <footer class="p-2 bg-light text-dark 
-  text-center position-relative">
-  <div class="container">
-  <p class="lead">Copyright &copy : 2024 <a href="#"><i class="bi bi-facebook text-primary mx-1"></i></a>
-  <a href="#"><i class="bi bi-instagram text-primary mx-1"></i></a>
-  <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
-  
-  </p>
-  <a href="#" class="position-absolute text-dark bottom-0 text-dark end-0 p-3">
-  <i class="bi bi-arrow-up-circle h1"></i>
-  </a>
-  </div>
   </footer>
-  
-  
-  
-  
-  
-  
-  
-  
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
- 
- 
- 
- 
- 
-  </body>
-  </html>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+

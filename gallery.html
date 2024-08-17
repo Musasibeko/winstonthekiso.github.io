@@ -1,78 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-  <style>
-    .card-img-top {
-      height: auto;
-      width: 100%;
-    }
-    .card-body {
-      text-align: center;
-      padding: 20px;
-    }
-    .card {
-      margin-bottom: 20px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .card-title {
-      margin-top: 20px;
-    }
-    .card-img-container img {
-      transition: transform 0.3s ease;
-    }
-    .card-body:hover, .card-img-container img:hover {
-      transform: scale(1.05);
-    }
-    @media (min-width: 768px) {
-      .card {
-        max-width: 90%;
-        margin: 0 auto;
-      }
-      .row .col-md-6 img {
-        width: 80%; /* Reduced image size by 20% for smaller screens */
-        max-width: 240px; /* Adjusted max-width accordingly */
-      }
-    }
-    @media (min-width: 1200px) {
-      .card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-      .card-body {
-        text-align: left;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .card-img-container {
-        max-width: 300px;
-        flex: 1;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    .navbar-toggler {
-      order: -1;
-    }
-    .navbar-nav .nav-link {
-      transition: color 0.3s ease, background-color 0.3s ease;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #ffffff;
-      background-color: #007bff;
-    }
-    footer .bi {
       transition: color 0.3s ease, transform 0.3s ease;
     }
     footer .bi:hover {
@@ -82,8 +7,10 @@
     footer .bi-arrow-up-circle:hover {
       transform: translateY(-5px) scale(1.1);
     }
+    .last-card {
+      margin-bottom: 60px; /* Space between last card and footer */
+    }
   </style>
-  <title>Winston Thekiso</title>
 </head>
 <body>
 
@@ -106,40 +33,237 @@
     </div> 
   </nav>
 
-  <h1 class="p-3 text-center">ABOUT ME</h1>
+  <h1 class="p-3 text-center">GALLERY</h1>
 
-  <!-- About Section -->
-  <section class="min-vh-100">
+  <!-- Gallery Section -->
+  <section class="gallery min-vh-100">
     <div class="container-lg">
       <div class="row g-4">
+        <!-- Card 1 -->
         <div class="col-12">
           <div class="card h-100">
             <div class="row g-0">
               <div class="col-md-6 card-img-container">
-                <img src="https://www.artprintsa.com/images/wtport.jpg" class="card-img-top" alt="Winston Thekiso">
+                <img src="pictures/Changing Gears copy.jpg" class="card-img-top" alt="Changing Gears (2022)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">Winston Mojalefa Thekiso</h5>
-                  <p>Winston Mojalefa Thekiso is a ballpoint pen artist from Mbombela, Mpumalanga, with a diploma in Graphic Design from Technikon Witwatersrand.
-					His work, inspired by social, political, and economic issues in South Africa, delves into human thought, behavior, and philosophy.
-					Known for combining portraiture and landscapes using geometric shapes and flowers, Thekiso's art challenges viewers to derive their own interpretations and offers fresh perspectives on societal stereotypes.</p>
+                  <h5 class="card-title">Changing Gears (2022)</h5>
+                  <p><b>Medium</b>: Coloured pens on Plywood</p>
+                  <p><b>Size</b>: 710 X 710mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Powerlines.jpg" class="card-img-top" alt="Powerlines (2023)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Powerlines (2023)</h5>
+                  <p><b>Medium</b>: Coloured pens on paper</p>
+                  <p><b>Size</b>: 730 X 520mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Leaf.jpg" class="card-img-top" alt="Leaf (2021)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Leaf (2021)</h5>
+                  <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
+                  <p><b>Size</b>: 950 X 770mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Nnete.jpg" class="card-img-top" alt="Nnete (Truth) (2022)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Nnete (Truth) (2022)</h5>
+                  <p><b>Medium</b>: Coloured pens on Plywood</p>
+                  <p><b>Size</b>: 630 X 555mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Galaxy Within.jpg" class="card-img-top" alt="Galaxy Within (2023)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Within (2023)</h5>
+                  <p><b>Medium</b>: Coloured pens on paper</p>
+                  <p><b>Size</b>: 594 X 420mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+		<div class="col-12">
+			<div class="card h-100">
+			  <div class="row g-0">
+				<div class="col-md-6 card-img-container">
+				  <img src="pictures/Tinguva Ta Mune.jpg" class="card-img-top" alt="Tinguva Ta Mune (Four Seasons) (2022)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+				</div>
+				<div class="col-md-6">
+				  <div class="card-body">
+					<h5 class="card-title">Tinguva Ta Mune (Four Seasons) (2022)</h5>
+					<p><b>Medium</b>: Coloured pens on Plywood</p>
+					<p><b>Size</b>: 630 X 625mm</p>
+					<p><b>Price</b>: R800</p>
+					<a href="contactme.html" class="btn btn-primary">Contact Me</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+        <!-- Card 7 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Maletsopa.jpg" class="card-img-top" alt="Maletsopa (The One Who Came From Mud) (2020)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Maletsopa (The One Who Came From Mud) (2020)</h5>
+                  <p><b>Medium</b>: Coloured pens on paper</p>
+                  <p><b>Size</b>: 304 X 304mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Record copy.jpg" class="card-img-top" alt="Speak No Evil (2023)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Speak No Evil (2023)</h5>
+                  <p><b>Medium</b>: Coloured pens on vinyl record</p>
+                  <p><b>Size</b>: 304 X 304mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-12">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Rosy.jpg" class="card-img-top" alt="Rosy (2021)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Rosy (2021)</h5>
+                  <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
+                  <p><b>Size</b>: 730 X 520mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 (previously Card 6, now last) -->
+        <div class="col-12 last-card">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-6 card-img-container">
+                <img src="pictures/Madifate 1.jpg" class="card-img-top" alt="Madifate (Tree Lady) (2021)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Madifate (Tree Lady) (2021)</h5>
+                  <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
+                  <p><b>Size</b>: 930 X 1230mm</p>
+                  <p><b>Price</b>: R800</p>
+                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Modal -->
+  <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Image Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" id="modal-img" class="img-fluid" alt="modal image">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="p-2 bg-light text-dark text-center position-relative">
     <div class="container">
       <p class="lead">Copyright &copy; 2024
-        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook mx-1"></i></a>
-        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram mx-1"></i></a>
-        <a href="#"><i class="bi bi-twitter mx-1"></i></a>
+        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-primary mx-1"></i></a>
+        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-primary mx-1"></i></a>
+        <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
       </p>
       <a href="#" class="position-absolute bottom-0 end-0 p-3">
         <i class="bi bi-arrow-up-circle h1"></i>
@@ -150,6 +274,11 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script>
+    function openModal(img) {
+      document.getElementById('modal-img').src = img.src;
+    }
+  </script>
 
 </body>
 </html>

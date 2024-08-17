@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
-  <title>Winston Thekiso</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
   <style>
     .card-img-top {
       height: auto;
@@ -15,24 +13,29 @@
     }
     .card-body {
       text-align: center;
-      margin: 3px;
-	  margin-left: 40px;
+      padding: 20px;
     }
     .card {
       margin-bottom: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
     .card-title {
       margin-top: 20px;
-	  margin-left: 50px;
+    }
+    .card-img-container img {
+      transition: transform 0.3s ease;
+    }
+    .card-body:hover, .card-img-container img:hover {
+      transform: scale(1.05);
     }
     @media (min-width: 768px) {
       .card {
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
       }
       .row .col-md-6 img {
-        width: 100%;
-        max-width: 300px;
+        width: 80%; /* Reduced image size by 20% for smaller screens */
+        max-width: 240px; /* Adjusted max-width accordingly */
       }
     }
     @media (min-width: 1200px) {
@@ -60,17 +63,37 @@
     .navbar-toggler {
       order: -1;
     }
+    .navbar-nav .nav-link {
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffffff;
+      background-color: #007bff;
+    }
+    footer .bi {
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    footer .bi:hover {
+      color: #007bff;
+      transform: scale(1.1);
+    }
+    footer .bi-arrow-up-circle:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
   </style>
+  <title>Winston Thekiso</title>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
     <div class="container">
+      <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -97,7 +120,7 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 style="margin-top: 20%"  class="card-title">Winston Mojalefa Thekiso</h5>
+                  <h5 class="card-title">Winston Mojalefa Thekiso</h5>
                   <p>Winston Mojalefa Thekiso is a ballpoint pen artist from Mbombela, Mpumalanga, with a diploma in Graphic Design from Technikon Witwatersrand.
 					His work, inspired by social, political, and economic issues in South Africa, delves into human thought, behavior, and philosophy.
 					Known for combining portraiture and landscapes using geometric shapes and flowers, Thekiso's art challenges viewers to derive their own interpretations and offers fresh perspectives on societal stereotypes.</p>
@@ -114,9 +137,9 @@
   <footer class="p-2 bg-light text-dark text-center position-relative">
     <div class="container">
       <p class="lead">Copyright &copy; 2024
-        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-primary mx-1"></i></a>
-        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-primary mx-1"></i></a>
-        <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
+        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook mx-1"></i></a>
+        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram mx-1"></i></a>
+        <a href="#"><i class="bi bi-twitter mx-1"></i></a>
       </p>
       <a href="#" class="position-absolute bottom-0 end-0 p-3">
         <i class="bi bi-arrow-up-circle h1"></i>

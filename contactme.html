@@ -12,13 +12,25 @@
     .navbar-toggler {
       order: -1; /* Move navbar-toggler to the left on small screens */
     }
-    .contact-container {
+    .contact-info-container {
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
       border: 1px solid #ddd;
       border-radius: 5px;
-      background-color: #f8f9fa; /* Light gray background */
+      background-color: #f8f9fa;
+    }
+    .contact-info-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f8f9fa;
     }
     .contact-container h3 {
       text-align: center;
@@ -32,12 +44,14 @@
       border: 1px solid #ddd;
     }
     .contact-container input, .contact-container textarea {
-      background-color: #fff; /* White background for inputs */
+      background-color: #fff;
     }
     .contact-container button {
       background-color: #007bff;
       color: white;
       border: none;
+      text-transform: uppercase;
+      font-weight: bold;
     }
     @media (max-width: 767.98px) {
       .navbar-collapse {
@@ -45,7 +59,33 @@
       }
     }
     footer {
+      background-color: #f8f9fa;
+      padding: 20px;
       margin-top: 20px;
+      color: #343a40;
+    }
+    footer .lead {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    footer .bi {
+      font-size: 1.5rem;
+      margin: 0 5px; /* Reduced margin to bring icons closer */
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    footer .bi:hover {
+      color: #007bff;
+      transform: scale(1.1);
+    }
+    footer .bi-arrow-up-circle:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
+    footer a {
+      color: #343a40;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #007bff;
     }
   </style>
 </head>
@@ -86,66 +126,40 @@
 
   <!-- Contact Info -->
   <section class="p-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md">
-          <h2 class="text-center mb-4">CONTACT INFO</h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item">
-              <span class="fw-bold">Cell:</span> 082 835 3215 
-              <a href="https://wa.me/qr/LKQG2A4QVK4ZH1">
-                <i class="bi bi-whatsapp text-dark mx-1"></i>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">Email Address:</span> Winzaman@gmail.com
-              <a href="mailto:Winzaman@gmail.com">
-                <i class="bi bi-google text-dark mx-1"></i>
-              </a>
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">Social Media:</span>
-              <a href="https://wa.me/qr/LKQG2A4QVK4ZH1">
-                <i class="bi bi-whatsapp text-dark mx-1"></i>
-              </a>
-              <a href="https://www.facebook.com/winstonmojalefa.thekiso1/">
-                <i class="bi bi-facebook text-dark mx-1"></i>
-              </a>
-              <a href="https://www.instagram.com/winston_mojalefa_thekiso/">
-                <i class="bi bi-instagram text-dark mx-1"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="contact-info-container">
+      <h2>CONTACT INFO</h2>
+      <ul class="list-group list-group-flush lead">
+        <li class="list-group-item">
+          <span class="fw-bold">Cell:</span> 082 835 3215 
+          <a href="https://wa.me/qr/LKQG2A4QVK4ZH1">
+            <i class="bi bi-whatsapp text-dark mx-1"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- Contact Form -->
+  <!-- Request a Call Form -->
   <section class="p-5">
     <div class="contact-container">
       <form id="contact-form">
-        <h3>GET IN TOUCH</h3>
+        <h3>REQUEST A CALL</h3>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <textarea id="message" name="message" rows="4" placeholder="How Can We Help You?" required></textarea>
-        <input type="file" id="attachment" name="attachment" accept="image/*,application/pdf" class="form-control">
-        <button type="submit">Submit</button>
+        <input type="file" id="attachment" name="attachment" accept="image/*,application/pdf" class="form-control mb-3">
+        <button type="submit">REQUEST A CALL</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="p-5 bg-light text-dark text-center position-relative">
+  <footer class="text-center position-relative">
     <div class="container">
       <p class="lead">Copyright &copy; 2024
-        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/">
-          <i class="bi bi-facebook text-primary mx-1"></i>
-        </a>
-        <a href="https://www.instagram.com/winston_mojalefa_thekiso/">
-          <i class="bi bi-instagram text-primary mx-1"></i>
-        </a>
+        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram"></i></a>
       </p>
       <a href="#" class="position-absolute bottom-0 end-0 p-3">
         <i class="bi bi-arrow-up-circle h1"></i>
@@ -167,10 +181,10 @@
 
       emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) // Replace with your EmailJS service ID and template ID
         .then(function() {
-          alert('Message sent successfully!');
+          alert('Request sent successfully!');
           document.getElementById('contact-form').reset();
         }, function(error) {
-          alert('Failed to send message. Please try again later.');
+          alert('Failed to send request. Please try again later.');
         });
     });
   </script>

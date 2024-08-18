@@ -1,98 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Winston Thekiso</title>
-    <style>
-        .event-img {
-            max-width: 40%;
-            height: auto;
-            margin: auto;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+	<title>Winston Thekiso</title>
+	<style>
+		.navbar-toggler {
+			order: -1;
+		}
+		.navbar-nav .nav-link {
+			transition: color 0.3s ease, background-color 0.3s ease;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		.navbar-nav .nav-link:hover {
+			color: #ffffff;
+			background-color: #007bff;
+		}
+		.exhibition img {
+			width: 40%; /* Reduced by 20% */
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
+		}
+		.exhibition img:hover {
+			transform: scale(1.1);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		}
+		footer {
+			background-color: #f8f9fa;
+			color: #000;
+			padding: 20px 0;
+			position: relative;
+		}
+		footer .container {
+			text-align: center;
+		}
+		footer .lead {
+			margin: 0;
+			font-size: 1rem;
+		}
+		footer .bi {
+			transition: color 0.3s ease, transform 0.3s ease;
+			color: #007bff;
+			font-size: 1.5rem;
+		}
+		footer .bi:hover {
+			color: #0056b3;
+			transform: scale(1.1);
+		}
+		footer .bi-arrow-up-circle:hover {
+			transform: translateY(-5px) scale(1.1);
+		}
+		footer a {
+			color: #007bff;
+			text-decoration: none;
+		}
+		footer a:hover {
+			color: #0056b3;
+		}
+		footer .social-icons {
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
-    <div class="container">
-        <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="gallery.html" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a href="AtWork.html" class="nav-link">At Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contactme.html" class="nav-link">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
+		<div class="container">
+			<a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+					<li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+					<li class="nav-item"><a href="AtWork.html" class="nav-link">At Work</a></li>
+					<li class="nav-item"><a href="contactme.html" class="nav-link">Contact Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-<div class="container">
-    <h1 class="py-4 text-center">EXHIBITIONS</h1>
-    
-    <section class="text-center">
-        <div class="row">
-            <div class="col-12 p-2">
-                <div class="card" style="width: 100%;">
-                    <img src="pictures/EVENT1.jpg" class="card-img-top event-img" alt="Event 1">
-                </div>
-            </div>
-            <div class="col-12 p-2">
-                <div class="card" style="width: 100%;">
-                    <img src="pictures/event2.jpg" class="card-img-top event-img" alt="Event 2">
-                </div>
-            </div>
-            <div class="col-12 p-2">
-                <div class="card" style="width: 100%;">
-                    <img src="pictures/event3.jpg" class="card-img-top event-img" alt="Event 3">
-                </div>
-            </div>
-            <div class="col-12 p-2">
-                <div class="card" style="width: 100%;">
-                    <img src="pictures/event4.jpg" class="card-img-top event-img" alt="Event 4">
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- Footer -->
-<footer class="p-2 bg-light text-dark text-center position-relative">
-  <div class="container">
-    <p class="lead">Copyright &copy; 2024
-      <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook text-primary mx-1"></i></a>
-      <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram text-primary mx-1"></i></a>
-      <a href="#"><i class="bi bi-twitter text-primary mx-1"></i></a>
-    </p>
-    <a href="#" class="position-absolute bottom-0 end-0 p-3">
-      <i class="bi bi-arrow-up-circle h1"></i>
-    </a>
-  </div>
-</footer>
+	<!-- Exhibitions Section -->
+	<section class="py-4 text-center">
+		<div class="container">
+			<h1 class="pb-4">EXHIBITIONS</h1>
+			<div class="exhibition">
+				<img src="pictures/event2.jpg" alt="Event 2" class="img-fluid">
+			</div>
+			<div class="exhibition">
+				<img src="pictures/EVENT1.jpg" alt="Event 1" class="img-fluid">
+			</div>
+			<div class="exhibition">
+				<img src="pictures/event3.jpg" alt="Event 3" class="img-fluid">
+			</div>
+			<div class="exhibition">
+				<img src="pictures/EVENT4.jpg" alt="Event 4" class="img-fluid">
+			</div>
+		</div>
+	</section>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	<!-- Footer -->
+	<footer class="p-2 bg-light text-dark text-center position-relative">
+		<div class="container">
+			<p class="lead">Copyright &copy; 2024
+				<a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook mx-1"></i></a>
+				<a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram mx-1"></i></a>
+				<a href="#"><i class="bi bi-twitter mx-1"></i></a>
+			</p>
+			<a href="#" class="position-absolute bottom-0 end-0 p-3">
+				<i class="bi bi-arrow-up-circle h1"></i>
+			</a>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 </body>
 </html>

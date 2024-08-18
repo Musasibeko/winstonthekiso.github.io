@@ -47,6 +47,23 @@
     .navbar-toggler {
       order: -1; /* Move navbar-toggler to the left on small screens */
     }
+    .video-card {
+      margin: 30px auto;
+      max-width: 70%;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+    .video-card .btn {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .video-section-title {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      margin-top: 3%; /* Reduced margin to close the gap */
+    }
   </style>
 </head>
 <body>
@@ -73,9 +90,22 @@
   <div class="container">
     <h1 class="py-4 text-center">AT WORK</h1>
 
+    <!-- Video Section -->
+    <section>
+        <h2 class="video-section-title"></h2>
+        <div class="card video-card">
+            <div class="card-body">
+                <h5 class="card-title">Watch Our Latest Video</h5>
+                <p class="card-text">Click below to watch the latest behind-the-scenes video.</p>
+                <a href="https://youtu.be/TEoaa26_ogA" class="btn btn-primary" target="_blank">Watch Now</a>
+            </div>
+        </div>
+    </section>
+
     <section class="gallery min-vh-100">
         <div class="container-lg">
             <div class="row">
+                <!-- Existing Cards -->
                 <div class="col-12 col-sm-6 col-md-4 mb-4">
                     <div class="card">
                         <img src="pictures/AtWork2.jpg" class="card-img-top" alt="gallery6" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">

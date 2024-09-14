@@ -77,6 +77,52 @@
     .last-card {
       margin-bottom: 60px; /* Space between last card and footer */
     }
+    .cart-dropdown {
+      position: relative;
+    }
+    .cart-dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      z-index: 1;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      padding: 10px;
+    }
+    .cart-dropdown:hover .cart-dropdown-content {
+      display: block;
+    }
+    .cart-dropdown-header {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .cart-dropdown-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .cart-dropdown-items li {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cart-dropdown-footer {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .cart-dropdown-footer .btn {
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -95,6 +141,22 @@
           <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
           <li class="nav-item"><a href="Atwork.html" class="nav-link">At Work</a></li>
           <li class="nav-item"><a href="contactme.html" class="nav-link">Contact Me</a></li>
+
+          <!-- Cart Icon on Navbar -->
+          <li class="nav-item cart-dropdown">
+            <a href="#" class="nav-link">
+              <i class="bi bi-cart"></i> Cart
+            </a>
+            <div class="cart-dropdown-content">
+              <div class="cart-dropdown-header">Your Cart</div>
+              <ul class="cart-dropdown-items" id="nav-cart-items">
+                <li>No items added yet.</li>
+              </ul>
+              <div class="cart-dropdown-footer">
+                <button class="btn btn-primary" id="nav-checkout-btn">Checkout via WhatsApp</button>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div> 
@@ -119,7 +181,9 @@
                   <p><b>Medium</b>: Coloured pens on Plywood</p>
                   <p><b>Size</b>: 710 X 710mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Changing Gears (2022)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -139,7 +203,9 @@
                   <p><b>Medium</b>: Coloured pens on paper</p>
                   <p><b>Size</b>: 730 X 520mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Powerlines (2023)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -159,7 +225,9 @@
                   <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
                   <p><b>Size</b>: 950 X 770mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Leaf (2021)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -179,7 +247,9 @@
                   <p><b>Medium</b>: Coloured pens on Plywood</p>
                   <p><b>Size</b>: 630 X 555mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Nnete (Truth) (2022)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -199,7 +269,9 @@
                   <p><b>Medium</b>: Coloured pens on paper</p>
                   <p><b>Size</b>: 594 X 420mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Galaxy Within (2023)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -207,99 +279,21 @@
         </div>
 
         <!-- Card 6 -->
-		<div class="col-12">
-			<div class="card h-100">
-			  <div class="row g-0">
-				<div class="col-md-6 card-img-container">
-				  <img src="pictures/Tinguva Ta Mune.jpg" class="card-img-top" alt="Tinguva Ta Mune (Four Seasons) (2022)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
-				</div>
-				<div class="col-md-6">
-				  <div class="card-body">
-					<h5 class="card-title">Tinguva Ta Mune (Four Seasons) (2022)</h5>
-					<p><b>Medium</b>: Coloured pens on Plywood</p>
-					<p><b>Size</b>: 630 X 625mm</p>
-					<p><b>Price</b>: R800</p>
-					<a href="contactme.html" class="btn btn-primary">Contact Me</a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-
-        <!-- Card 7 -->
-        <div class="col-12">
-          <div class="card h-100">
-            <div class="row g-0">
-              <div class="col-md-6 card-img-container">
-                <img src="pictures/Maletsopa.jpg" class="card-img-top" alt="Maletsopa (The One Who Came From Mud) (2020)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title">Maletsopa (The One Who Came From Mud) (2020)</h5>
-                  <p><b>Medium</b>: Coloured pens on paper</p>
-                  <p><b>Size</b>: 304 X 304mm</p>
-                  <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="col-12">
-          <div class="card h-100">
-            <div class="row g-0">
-              <div class="col-md-6 card-img-container">
-                <img src="pictures/Record copy.jpg" class="card-img-top" alt="Speak No Evil (2023)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title">Speak No Evil (2023)</h5>
-                  <p><b>Medium</b>: Coloured pens on vinyl record</p>
-                  <p><b>Size</b>: 304 X 304mm</p>
-                  <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="col-12">
-          <div class="card h-100">
-            <div class="row g-0">
-              <div class="col-md-6 card-img-container">
-                <img src="pictures/Rosy.jpg" class="card-img-top" alt="Rosy (2021)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title">Rosy (2021)</h5>
-                  <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
-                  <p><b>Size</b>: 730 X 520mm</p>
-                  <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 10 (previously Card 6, now last) -->
         <div class="col-12 last-card">
           <div class="card h-100">
             <div class="row g-0">
               <div class="col-md-6 card-img-container">
-                <img src="pictures/Madifate 1.jpg" class="card-img-top" alt="Madifate (Tree Lady) (2021)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
+                <img src="pictures/Tinguva Ta Mune.jpg" class="card-img-top" alt="Tinguva Ta Mune (Four Seasons) (2022)" data-bs-toggle="modal" data-bs-target="#gallery-popup" onclick="openModal(this)">
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">Madifate (Tree Lady) (2021)</h5>
-                  <p><b>Medium</b>: Coloured pens, blow torch, and soldering iron on cork sheets</p>
-                  <p><b>Size</b>: 930 X 1230mm</p>
+                  <h5 class="card-title">Tinguva Ta Mune (Four Seasons) (2022)</h5>
+                  <p><b>Medium</b>: Coloured pens on Plywood</p>
+                  <p><b>Size</b>: 630 X 625mm</p>
                   <p><b>Price</b>: R800</p>
-                  <a href="contactme.html" class="btn btn-primary">Contact Me</a>
+                  <button class="btn btn-primary" onclick="addToCart('Tinguva Ta Mune (Four Seasons) (2022)', 800)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -341,10 +335,54 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <!-- Cart Script -->
   <script>
-    function openModal(img) {
-      document.getElementById('modal-img').src = img.src;
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function addToCart(productName, productPrice) {
+      cart.push({ name: productName, price: productPrice });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCart();
     }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCart();
+    }
+
+    function updateCart() {
+      const navCartItems = document.getElementById('nav-cart-items'); // Get the cart element
+      const cartTotalElement = document.getElementById('cart-total');
+      const navCheckoutButton = document.getElementById('nav-checkout-btn');
+
+      navCartItems.innerHTML = ''; // Clear previous cart items
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const navLi = document.createElement('li');
+        navLi.innerHTML = `${item.name} - R${item.price} <i class="bi bi-trash text-danger" onclick="removeFromCart(${index})"></i>`;
+        navCartItems.appendChild(navLi);
+        total += item.price;
+      });
+
+      if (cart.length === 0) {
+        navCartItems.innerHTML = '<li>No items added yet.</li>';
+      }
+
+      // Create checkout message for WhatsApp
+      const checkoutMessage = 'Hi! I would like to order the following items:\n' + cart.map(item => `${item.name} - R${item.price}`).join('\n') + `\nTotal: R${total}`;
+      const checkoutURL = `https://wa.me/27815545050?text=${encodeURIComponent(checkoutMessage)}`;
+      
+      // Update checkout button
+      navCheckoutButton.onclick = function() {
+        window.location.href = checkoutURL;
+      };
+    }
+
+    // Load cart on page load
+    window.onload = updateCart;
   </script>
 
 </body>

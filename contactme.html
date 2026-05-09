@@ -1,192 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <title>Winston Thekiso</title>
-  <style>
-    .navbar-toggler {
-      order: -1; /* Move navbar-toggler to the left on small screens */
-    }
-    .contact-info-container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #f8f9fa;
-    }
-    .contact-info-container h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .contact-container {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #f8f9fa;
-    }
-    .contact-container h3 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .contact-container input, .contact-container textarea, .contact-container button {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-    .contact-container input, .contact-container textarea {
-      background-color: #fff;
-    }
-    .contact-container button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-    @media (max-width: 767.98px) {
-      .navbar-collapse {
-        justify-content: flex-start;
-      }
-    }
-    footer {
-      background-color: #f8f9fa;
-      padding: 20px;
-      margin-top: 20px;
-      color: #343a40;
-    }
-    footer .lead {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    footer .bi {
-      font-size: 1.5rem;
-      margin: 0 5px; /* Reduced margin to bring icons closer */
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-    footer .bi:hover {
-      color: #007bff;
-      transform: scale(1.1);
-    }
-    footer .bi-arrow-up-circle:hover {
-      transform: translateY(-5px) scale(1.1);
-    }
-    footer a {
-      color: #343a40;
-      text-decoration: none;
-    }
-    footer a:hover {
-      color: #007bff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Winston Thekiso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light navbar-light p-2">
-    <div class="container">
-      <a href="#" class="navbar-brand"><b>WINSTON MOJALEFA THEKISO</b></a>
-      <button 
-        class="navbar-toggler"
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="gallery.html" class="nav-link">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a href="events.html" class="nav-link">Events</a>
-          </li>
-          <li class="nav-item">
-            <a href="AtWork.html" class="nav-link">At Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="contactme.html" class="nav-link">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </div> 
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">WINSTON THEKISO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AtWork.html">ARTWORK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Contact Info -->
-  <section class="p-5">
-    <div class="contact-info-container">
-      <h2>CONTACT INFO</h2>
-      <ul class="list-group list-group-flush lead">
-        <li class="list-group-item">
-          <span class="fw-bold">Cell:</span> 082 835 3215 
-          <a href="https://wa.me/qr/LKQG2A4QVK4ZH1">
-            <i class="bi bi-whatsapp text-dark mx-1"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="display-4 fw-bold mb-4">Contact the artist</h1>
+                <p class="lead mb-4">For commissions, collection inquiries, or exhibition walkthroughs.</p>
+                <div class="card shadow-sm p-4 mb-4">
+                    <a href="https://wa.me/2782353215?text=Hello%20Winston,%20I'm%20interested%20in%20your%20work" class="btn btn-success btn-lg mb-3" target="_blank">
+                        📱 WhatsApp +27 82 353 215
+                    </a>
+                    <p class="text-muted mb-0">Studio visits available by appointment in Mbombela.</p>
+                </div>
+                <div class="card shadow-sm p-4">
+                    <h5>Gallery representation</h5>
+                    <p class="mb-0">Gallery MOMO · Johannesburg<br>
+                    info@gallerymomo.co.za · +27 11 123 4567</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <!-- Request a Call Form -->
-  <section class="p-5">
-    <div class="contact-container">
-      <form id="contact-form">
-        <h3>REQUEST A CALL</h3>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <textarea id="message" name="message" rows="4" placeholder="How Can We Help You?" required></textarea>
-        <input type="file" id="attachment" name="attachment" accept="image/*,application/pdf" class="form-control mb-3">
-        <button type="submit">REQUEST A CALL</button>
-      </form>
-    </div>
-  </section>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2025 Winston Mojalefa Thekiso. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="text-center position-relative">
-    <div class="container">
-      <p class="lead">Copyright &copy; 2024
-        <a href="https://www.facebook.com/winstonmojalefa.thekiso1/"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/winston_mojalefa_thekiso/"><i class="bi bi-instagram"></i></a>
-      </p>
-      <a href="#" class="position-absolute bottom-0 end-0 p-3">
-        <i class="bi bi-arrow-up-circle h1"></i>
-      </a>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) // Replace with your EmailJS service ID and template ID
-        .then(function() {
-          alert('Request sent successfully!');
-          document.getElementById('contact-form').reset();
-        }, function(error) {
-          alert('Failed to send request. Please try again later.');
-        });
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winston Thekiso | Ballpoint Artist</title>
+    <title>Gallery | Winston Thekiso</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,8 +16,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">GALLERY</a></li>
                     <li class="nav-item"><a class="nav-link" href="AtWork.html">ARTWORK</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -27,20 +27,177 @@
     </nav>
 
     <main class="container my-5">
-        <div class="row align-items-center">
+        <!-- Header row with profile (matches index.html layout) -->
+        <div class="row align-items-center mb-5">
             <div class="col-md-5 text-center mb-4 mb-md-0">
                 <img src="pictures/new1.jpg" alt="Winston Mojalefa Thekiso" class="img-fluid profile-img shadow-lg">
             </div>
             <div class="col-md-7">
-                <h1 class="display-5 fw-bold">Winston Mojalefa Thekiso</h1>
+                <h1 class="display-5 fw-bold">Winston Motalefa Thekiso</h1>
                 <p class="lead text-muted">Ballpoint Pen Artist | Graphic Designer | Mbombela, Mpumalanga</p>
                 <hr>
-                <p class="fs-5">Winston Mojalefa Thekiso holds a diploma in Graphic Design from Technikon Witwatersrand. His work interrogates South African social, political, and economic landscapes — merging portraiture with geometric abstraction and floral motifs. Each piece invites the viewer to deconstruct stereotypes and construct their own meaning.</p>
-                <p class="fs-5">Working exclusively in ballpoint pen, Thekiso's practice spans human psychology, philosophical inquiry, and visual storytelling. His pieces are held in private collections across Johannesburg, Cape Town, and internationally.</p>
-                <a href="gallery.html" class="btn btn-dark btn-lg mt-3">View Collection →</a>
+                <p class="fs-5">Winston Motalefa Thekiso holds a diploma in Graphic Design from Technikon Witwatersrand. His work interrogates South African social, political, and economic landscapes — merging portraiture with geometric abstraction and floral motifs.</p>
+                <p class="fs-5">Working exclusively in ballpoint pen, Thekiso's practice spans human psychology, philosophical inquiry, and visual storytelling.</p>
+            </div>
+        </div>
+
+        <!-- Gallery Title -->
+        <h2 class="text-center mb-4">Artwork Collection</h2>
+        <p class="text-center text-muted mb-5">Original ballpoint pen artworks · Limited edition prints</p>
+
+        <!-- Bootstrap Responsive Cards Grid - 8 pictures -->
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new1.jpg" class="card-img-top gallery-img-click" alt="Geometric Silence" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Geometric Silence</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2024</p>
+                        <span class="fw-bold fs-5">R450</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new2.jpg" class="card-img-top gallery-img-click" alt="Floral Interruption" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Floral Interruption</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2024</p>
+                        <span class="fw-bold fs-5">R550</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new3.jpg" class="card-img-top gallery-img-click" alt="Urban Fracture" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Urban Fracture</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2023</p>
+                        <span class="fw-bold fs-5">R480</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new4.jpg" class="card-img-top gallery-img-click" alt="Portrait of Memory" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Portrait of Memory</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2024</p>
+                        <span class="fw-bold fs-5">R620</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new5.jpg" class="card-img-top gallery-img-click" alt="Silence" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Silence</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2023</p>
+                        <span class="fw-bold fs-5">R700</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new6.jpg" class="card-img-top gallery-img-click" alt="Thekiso's Gaze" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Thekiso's Gaze</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2025</p>
+                        <span class="fw-bold fs-5">R520</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new7.jpg" class="card-img-top gallery-img-click" alt="Abstract Truth" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Abstract Truth</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2024</p>
+                        <span class="fw-bold fs-5">R390</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card gallery-card h-100">
+                    <img src="pictures/new8.jpg" class="card-img-top gallery-img-click" alt="Last Light" style="cursor: pointer;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Last Light</h5>
+                        <p class="card-text text-muted">Ballpoint on paper · 2025</p>
+                        <span class="fw-bold fs-5">R475</span>
+                        <div class="mt-3 d-flex gap-2 justify-content-center">
+                            <select class="form-select form-select-sm w-50">
+                                <option>A4</option><option>A3</option><option>A2</option>
+                            </select>
+                            <button class="btn btn-dark btn-sm add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
@@ -49,6 +206,37 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        // Lightbox functionality
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeSpan = document.querySelector(".modal-close");
+
+        function openModal(imgSrc) {
+            if (modal && modalImg) {
+                modal.style.display = "block";
+                modalImg.src = imgSrc;
+            }
+        }
+
+        document.querySelectorAll(".gallery-img-click").forEach(img => {
+            img.addEventListener("click", (e) => {
+                e.stopPropagation();
+                openModal(img.src);
+            });
+        });
+
+        if (closeSpan) {
+            closeSpan.onclick = () => modal.style.display = "none";
+        }
+        window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+        // Add to Cart alerts
+        document.querySelectorAll(".add-to-cart").forEach(btn => {
+            btn.addEventListener("click", () => {
+                alert("Demo: This artwork would be added to your cart.");
+            });
+        });
+    </script>
 </body>
 </html>
